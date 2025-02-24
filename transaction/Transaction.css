@@ -1,0 +1,166 @@
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+/* General Layout */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background-color: #4C585B;
+    padding: 15px;
+    color: #F4EDD3;
+    position: fixed;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar a.nav-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar a.nav-link:hover {
+    background-color: #7E99A3;
+    border-radius: 5px;
+}
+
+.nav-link.active {
+    background-color: #4C585B !important;
+    color: white !important;
+    font-weight: bold; /* Teks lebih tebal */
+}
+
+.d-flex {
+    border-radius: 5px;
+}
+
+/* Main Content */
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Styling untuk kartu ringkasan */
+.shadow {
+    margin-left: 6px;
+}
+
+.summary-card {
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+.income-card {
+    border-left: 5px solid #0d6efd;
+}
+.expense-card {
+    border-left: 5px solid #dc3545;
+}
+.total-card {
+    border-left: 5px solid #28a745;
+}
+
+/* Styling untuk table */
+.table th {
+    background-color: #f8f9fa;
+}
+.text-primary {
+    font-weight: bold;
+}
+.text-danger {
+    font-weight: bold;
+}
+.text-success {
+    font-weight: bold;
+}
+
+/* Styling untuk tombol bulan navigasi */
+#prevMonth, #nextMonth {
+    width: 50px; /* Perbesar ukuran tombol */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Membuatnya bulat */
+    background-color: #f8f9fa; /* Warna latar belakang */
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efek hover */
+#prevMonth:hover, #nextMonth:hover {
+    background-color: #e2e6ea;
+}
+
+/* Posisi agar lebih dekat dengan #currentMonth */
+.month-navigation {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Mengurangi jarak antar elemen */
+}
+
+/* Styling untuk #currentMonth */
+#currentMonth {
+    font-size: 1.5rem; /* Memperbesar teks */
+    font-weight: bold;
+    min-width: 150px; /* Pastikan tidak terlalu kecil */
+    text-align: center;
+}
+
+/* Styling untuk form inputan */
+#addTransactionBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Modal */
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+.modal-title {
+    font-weight: bold;
+}
+.btn-close {
+    color: white;
+}
+
+/* Efek hover */
+#addTransactionBtn:hover {
+    background-color: #0056b3;
+}
+
+/* SVG di dalam button */
+#addTransactionBtn svg {
+    width: 28px;
+    height: 28px;
+}
+
